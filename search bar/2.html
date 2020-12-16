@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSK</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js">
+    </script>
+    <script type="text/javascript" defer src="./app.js">
+    </script>
+
+
+</head>
+
+<div class="topnav">
+
+    <!-- Centered link -->
+    <div class="topnav-centered">
+        <a href="./index.html" class="active">Home</a>
+    </div>
+
+    <!-- Left-aligned links (default) -->
+    <a href="./practice.html">Practice</a>
+    <a href="#search">Search</a>
+
+    <!-- Right-aligned links -->
+    <div class="topnav-right">
+        <a href="./contact.html">Contact</a>
+
+        <a href="./about.html">About Me</a>
+    </div>
+
+</div>
+
+
+<h1> My Chinese Vocabulary</h1>
+<h3> Everything you need to learn to enter any Chinese university</h1>
+
+    <body>
+
+        <div class="pages">
+            <ul class="pages">
+                <li class="pages">
+                    <a class="pages" href="./index.html">1</a>
+                </li>
+                <li class="pages">
+                    <a class="pages" href="./2.html">2</a>
+                </li>
+                <li class="pages">
+                    <a class="pages" href="./3.html">3</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search  ...">
+
+
+
+
+
+            <ul id="myUL">
+
+                <li>
+                    <a href="#">成绩</a>
+                    <figure class="back">
+                        <h6>chéngjī</h6>
+                        <h4>score/mark</h4>
+                    </figure>
+                </li>
+
+                <li>
+                    <a href="#">锻炼</a>
+                    <figure class="back">
+                        <h6>Duànliàn</h6>
+                        <h4>work out</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">一刻</a>
+                    <figure class="back">
+                        <h6>Yīkè</h6>
+                        <h4>15 minutes</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">影响</a>
+                    <figure class="back">
+                        <h6>Yǐngxiǎng</h6>
+                        <h4>influence/effect</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">教室</a>
+                    <figure class="back">
+                        <h6>Jiàoshì</h6>
+                        <h4>classroom</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">骑车</a>
+                    <figure class="back">
+                        <h6>Qí chē</h6>
+                        <h4>to cycle</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">晴天</a>
+                    <figure class="back">
+                        <h6>Qíngtiān</h6>
+                        <h4>sunny day</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">菲律宾</a>
+                    <figure class="back">
+                        <h6>Fēilǜbīn</h6>
+                        <h4>the Philippines</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">健身房</a>
+                    <figure class="back">
+                        <h6>Jiànshēnfáng</h6>
+                        <h4>gym/gymnasium</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">健康</a>
+                    <figure class="back">
+                        <h6>Jiànkāng</h6>
+                        <h4>health</h4>
+                    </figure>
+                </li>
+
+            </ul>
+
+
+        </div>
+        </div>
+    </body>
+
+    <!-- <script>
+    function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+</script> -->
+
+</html>

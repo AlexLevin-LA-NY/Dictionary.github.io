@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSK</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js">
+    </script>
+    <script type="text/javascript" defer src="./app.js">
+    </script>
+
+
+</head>
+
+<div class="topnav">
+
+    <!-- Centered link -->
+    <div class="topnav-centered">
+        <a href="./index.html" class="active">Home</a>
+    </div>
+
+    <!-- Left-aligned links (default) -->
+    <a href="./practice.html">Practice</a>
+    <a href="#search">Search</a>
+
+    <!-- Right-aligned links -->
+    <div class="topnav-right">
+        <a href="./contact.html">Contact</a>
+
+        <a href="./about.html">About Me</a>
+    </div>
+
+</div>
+
+
+<h1> My Chinese Vocabulary</h1>
+<h3> Everything you need to learn to enter any Chinese university</h1>
+
+    <body>
+
+        <!-- <div id="toggle">
+<input type="checkbox" class="toggle" id="toggle" name="toggle">
+<label for="toggle">Toggle Thene</label>
+</div> -->
+
+        <!-- <h2>Word Count: <span id="count">0</span></h2>
+<textarea onkeyup="countWords(this); " id="input" rows="10"></textarea>
+ -->
+        <div class="pages">
+            <ul class="pages">
+                <li class="pages">
+                    <a class="pages" href="./index.html">1</a>
+                </li>
+                <li class="pages">
+                    <a class="pages" href="./2.html">2</a>
+                </li>
+                <li class="pages">
+                    <a class="pages" href="./3.html">3</a>
+                </li>
+            </ul>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search  ...">
+
+            <ul id="myUL">
+
+                <li>
+                    <a href="#">成绩</a>
+                    <figure class="back">
+                        <h6>chéngjī</h6>
+                        <h4>score/mark</h4>
+                    </figure>
+                </li>
+
+                <li>
+                    <a href="#">锻炼</a>
+                    <figure class="back">
+                        <h6>Duànliàn</h6>
+                        <h4>work out</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">一刻</a>
+                    <figure class="back">
+                        <h6>Yīkè</h6>
+                        <h4>15 minutes</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">影响</a>
+                    <figure class="back">
+                        <h6>Yǐngxiǎng</h6>
+                        <h4>influence/effect</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">教室</a>
+                    <figure class="back">
+                        <h6>Jiàoshì</h6>
+                        <h4>classroom</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">骑车</a>
+                    <figure class="back">
+                        <h6>Qí chē</h6>
+                        <h4>to cycle</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">晴天</a>
+                    <figure class="back">
+                        <h6>Qíngtiān</h6>
+                        <h4>sunny day</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">菲律宾</a>
+                    <figure class="back">
+                        <h6>Fēilǜbīn</h6>
+                        <h4>the Philippines</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">健身房</a>
+                    <figure class="back">
+                        <h6>Jiànshēnfáng</h6>
+                        <h4>gym/gymnasium</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">健康</a>
+                    <figure class="back">
+                        <h6>Jiànkāng</h6>
+                        <h4>health</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">打篮球</a>
+                    <figure class="back">
+                        <h6>Dǎ lánqiú</h6>
+                        <h4>play basketball</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">口渴</a>
+                    <figure class="back">
+                        <h6>Kǒu kě</h6>
+                        <h4>thirsty</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">放</a>
+                    <figure class="back">
+                        <h6>Fàng</h6>
+                        <h4>to put/to place</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">宾馆</a>
+                    <figure class="back">
+                        <h6>Bīnguǎn</h6>
+                        <h4>guesthouse</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">旧</a>
+                    <figure class="back">
+                        <h6>Jiù</h6>
+                        <h4>old/former</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">丈夫</a>
+                    <figure class="back">
+                        <h6>Zhàngfū</h6>
+                        <h4>husband</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">校长</a>
+                    <figure class="back">
+                        <h6>Xiàozhǎng</h6>
+                        <h4>principal/headmaster</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">多次</a>
+                    <figure class="back">
+                        <h6>Duō cì</h6>
+                        <h4>many times/repeatedly</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">遇到</a>
+                    <figure class="back">
+                        <h6>Yù dào</h6>
+                        <h4> to encounter/to run into</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">词语</a>
+                    <figure class="back">
+                        <h6>Cíyǔ</h6>
+                        <h4>words/a word</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">铅笔</a>
+                    <figure class="back">
+                        <h6>Qiānbǐ</h6>
+                        <h4>a pencil</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">旁边</a>
+                    <figure class="back">
+                        <h6>Pángbiān</h6>
+                        <h4>next to/side</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">决定</a>
+                    <figure class="back">
+                        <h6>Juédìng</h6>
+                        <h4>to decide/to resolve</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">阴</a>
+                    <figure class="back">
+                        <h6>Yīn</h6>
+                        <h4>overcast/cloudy</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">怕</a>
+                    <figure class="back">
+                        <h6>Pà</h6>
+                        <h4>afraid/fear</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">字典</a>
+                    <figure class="back">
+                        <h6>Zìdiǎn</h6>
+                        <h4>dictionary</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">提高</a>
+                    <figure class="back">
+                        <h6>Tígāo</h6>
+                        <h4>to improve</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">洗碗</a>
+                    <figure class="back">
+                        <h6>Xǐ wǎn</h6>
+                        <h4>wash the dishes</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">清楚</a>
+                    <figure class="back">
+                        <h6>Qīngchǔ</h6>
+                        <h4>clear</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">黑板</a>
+                    <figure class="back">
+                        <h6>Hēibǎn</h6>
+                        <h4>blackboard</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">结婚</a>
+                    <figure class="back">
+                        <h6>Jiéhūn</h6>
+                        <h4>to get married</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">努力</a>
+                    <figure class="back">
+                        <h6>Nǔlì</h6>
+                        <h4>work hard</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">练习</a>
+                    <figure class="back">
+                        <h6>Liànxí</h6>
+                        <h4>exercise/practice</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">总是</a>
+                    <figure class="back">
+                        <h6>Zǒng shì</h6>
+                        <h4>always</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">满意</a>
+                    <figure class="back">
+                        <h6>Mǎnyì</h6>
+                        <h4>satisfaction</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">其实</a>
+                    <figure class="back">
+                        <h6>Qíshí</h6>
+                        <h4>in fact/actually</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">主</a>
+                    <figure class="back">
+                        <h6>Zhǔ</h6>
+                        <h4>the Lord</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">介绍</a>
+                    <figure class="back">
+                        <h6>Jièshào</h6>
+                        <h4>to introduce</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">表演</a>
+                    <figure class="back">
+                        <h6>Biǎoyǎn</h6>
+                        <h4>perfomance</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">极</a>
+                    <figure class="back">
+                        <h6>Jí</h6>
+                        <h4>?</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">节目</a>
+                    <figure class="back">
+                        <h6>Jiémù</h6>
+                        <h4>program/show</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">节目主持人</a>
+                    <figure class="back">
+                        <h6>Jiémù zhǔchí rén</h6>
+                        <h4>a host</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">刻</a>
+                    <figure class="back">
+                        <h6>Kè</h6>
+                        <h4>quarter</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">一刻钟=15分钟</a>
+                    <figure class="back">
+                        <h6>Yīkè zhōng =15 fēnzhōng</h6>
+                        <h4></h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">三点一刻=3:15</a>
+                    <figure class="back">
+                        <h6>Sān diǎn yī kè</h6>
+                        <h4></h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">裤子</a>
+                    <figure class="back">
+                        <h6>Kùzi</h6>
+                        <h4>pants</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">角</a>
+                    <figure class="back">
+                        <h6>Jiǎo</h6>
+                        <h4>angle</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">1角=10分</a>
+                    <figure class="back">
+                        <h6>1 Jiǎo =10 fēn</h6>
+                        <h4></h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">1元=10角/毛</a>
+                    <figure class="back">
+                        <h6>Yuán =10 jiǎo/máo</h6>
+                        <h4></h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">被</a>
+                    <figure class="back">
+                        <h6>Bèi</h6>
+                        <h4>by(passive voice)</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">办法</a>
+                    <figure class="back">
+                        <h6>Bànfǎ</h6>
+                        <h4>method/way</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">解决</a>
+                    <figure class="back">
+                        <h6>Jiějué</h6>
+                        <h4>to solve/to resovle</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">根据</a>
+                    <figure class="back">
+                        <h6>Gēnjù</h6>
+                        <h4>according to</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">刮风</a>
+                    <figure class="back">
+                        <h6>Guā fēng</h6>
+                        <h4>windy</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">愿意</a>
+                    <figure class="back">
+                        <h6>Yuànyì</h6>
+                        <h4>willing/would</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">附近</a>
+                    <figure class="back">
+                        <h6>Fùjìn</h6>
+                        <h4>nearby</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">注意</a>
+                    <figure class="back">
+                        <h6>Zhùyì</h6>
+                        <h4>note/pay attention</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">段</a>
+                    <figure class="back">
+                        <h6>Duàn</h6>
+                        <h4>paragraph/segment</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">表示</a>
+                    <figure class="back">
+                        <h6>Biǎoshì</h6>
+                        <h4>to express</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">了解</a>
+                    <figure class="back">
+                        <h6>Liǎojiě</h6>
+                        <h4>to find out</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">急着</a>
+                    <figure class="back">
+                        <h6>Jízhuó</h6>
+                        <h4>in a hurry/urgently</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">变化</a>
+                    <figure class="back">
+                        <h6>Biànhuà</h6>
+                        <h4>to change</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">热情</a>
+                    <figure class="back">
+                        <h6>Rèqíng</h6>
+                        <h4>enthusiasm</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">行李箱</a>
+                    <figure class="back">
+                        <h6>Xínglǐ xiāng</h6>
+                        <h4>suitcase/luggage</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">收入</a>
+                    <figure class="back">
+                        <h6>Shōurù</h6>
+                        <h4>income</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">麻烦</a>
+                    <figure class="back">
+                        <h6>Máfan</h6>
+                        <h4>trouble</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">即使</a>
+                    <figure class="back">
+                        <h6>Jíshǐ</h6>
+                        <h4>even if</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">菠菜</a>
+                    <figure class="back">
+                        <h6>Bōcài</h6>
+                        <h4>spinach</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">莳萝</a>
+                    <figure class="back">
+                        <h6>Shí luó</h6>
+                        <h4>dill</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">躺</a>
+                    <figure class="back">
+                        <h6>Tǎng</h6>
+                        <h4>to lie down</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">全部</a>
+                    <figure class="back">
+                        <h6>Quánbù</h6>
+                        <h4>whole/entire</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">放假</a>
+                    <figure class="back">
+                        <h6>Fàngjià</h6>
+                        <h4>holiday</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">放血</a>
+                    <figure class="back">
+                        <h6>Fàngxiě</h6>
+                        <h4>to let blood</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">放屁</a>
+                    <figure class="back">
+                        <h6>Fàngpì</h6>
+                        <h4>to fart</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">放学</a>
+                    <figure class="back">
+                        <h6>Fàngxué</h6>
+                        <h4>classes are over</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">放学后</a>
+                    <figure class="back">
+                        <h6>Fàngxué hòu</h6>
+                        <h4>after school</h4>
+                    </figure>
+                </li>
+                <li>
+                    <a href="#">填写</a>
+                    <figure class="back">
+                        <h6>Tiánxiě</h6>
+                        <h4>fill in</h4>
+                    </figure>
+                </li>
+            </ul>
+
+
+        </div>
+        </div>
+
+
+    </body>
+
+    <!-- <script>
+    function myFunction() {
+        // Declare variables
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById('myInput');
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName('li');
+
+        // Loop through all list items, and hide those who don't match the search query
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+</script> -->
+
+</html>
